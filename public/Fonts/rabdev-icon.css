@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'rabdev-icon';
+    src: url('fonts/rabdev-icon.eot');
+    src: url('fonts/rabdev-icon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/rabdev-icon.woff2') format('woff2'),
+        url('fonts/rabdev-icon.woff') format('woff'),
+        url('fonts/rabdev-icon.ttf') format('truetype'),
+        url('fonts/rabdev-icon.svg#rabdev-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+[data-icon]:before {
+    font-family: "rabdev-icon" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="rd-"]:before,
+[class*=" rd-"]:before {
+    font-family: "rabdev-icon" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*font-size: 60px;*/
+}
+
+.rd-icon-css:before{
+    content: "\e002";
+}
+
+.rd-icon-html:before{
+    content: "\e002";
+}
+
+.rd-icon-js:before{
+    content: "\e003";
+}
+
+.rd-icon-git:before{
+    content: "\e004";
+}
+.rd-icon-github:before{
+    content: "\e005";
+}
+.rd-icon-arrow-left:before{
+    content: "\e006";
+}
+.rd-icon-arrow-right:before{
+    content: "\e007";
+}
+.rd-icon-illustrator:before{
+    content: "\e008";
+}
+.rd-icon-photoshop:before{
+    content: "\e009";
+}
+.rd-icon-nodejs:before{
+    content: "\e010";
+}
+.rd-icon-react:before{
+    content: "\e011";
+}
+.rd-icon-sass:before{
+    content: "\e012";
+}
+.rd-icon-affinity:before{
+    content: "\e013";
+}
+.rd-icon-coreldraw:before{
+    content: "\e014";
+}
+.rd-social-instagram:before{
+    content: "\e015";
+}
+.rd-social-likedin:before{
+    content: "\e016";
+}
+.rd-social-twitter:before{
+    content: "\e017";
+}
+
+.rd-icon-logo:before{
+  content: "\e018";
+}
+
+

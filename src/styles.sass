@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables"
+@import '@fontsource-variable/comfortaa'
+
+*,*::before,*::after
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  text-decoration: none
+  //font-size: 10px
+
+
+
+
+body
+  width: 100%
+  min-height: 100vh
+  background-image: linear-gradient(45deg,$mainVilet, $darkViolet)
+  color: $mainColorText
+  font-family: 'Comfortaa Variable', sans-serif
+
+.iconLogo
+  font-size: 5rem
+
+
+.icon
+  color: $mainColorText
+
+
+.socialIcon
+  color: $mainColorText
+  text-decoration: none
+  font-size: 2rem
+  transition: all .5s
+
+
+  &:hover
+    color: darken($mainColorText, 30)
+    transform-origin: center
+    transform: scale(1.4)
+
+

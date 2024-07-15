@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.wrapper{
+    width: 80%;
+    background-color: #eee;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.wrapper > *{
+    margin:  3px -1px;
+    display: inline-block;
+}
+
+.color-prime{
+    color: chocolate;
+}
+
+.color-prime:hover{
+    color: gray;
+}
+
+.element{
+    font-size: 6rem;
+    transform: translateY(15px);
+}
+.social{
+    font-size: 2rem;
+    color: #aaa;
+}
+
+.social:hover{
+    color: #ff0000
+
+}
+
