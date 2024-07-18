@@ -3,8 +3,15 @@
       <i class="rd-icon-logo iconLogo"></i>
    </div>
    <div class="mediaWrapper">
-      <a class="socialIcon" *ngFor="let media of medias" href="{{ media.url }}" target="_blank"
-         ><i class="{{ media.icon }} "></i
+      <a class="socialIcon" *ngFor="let media of medias" href="{{ media.url }}" target="_blank">
+         <i *ngIf="media.active" class="{{ media.icon }} "></i
       ></a>
    </div>
+   <!--   <div class="buttonLanguage">-->
+   <!--      @if (language === 'pl') {-->
+   <!--         <button (click)="changeLanguage()" class="languageChange polish">{{ language }}</button>-->
+   <!--      } @else if (language === 'en') {-->
+   <!--         <button (click)="changeLanguage()" class="languageChange english">{{ language }}</button>-->
+   <!--      }-->
+   <!--   </div>-->
 </div>

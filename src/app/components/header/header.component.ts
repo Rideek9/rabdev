@@ -12,16 +12,29 @@ export class HeaderComponent {
          name: 'Twitter',
          icon: 'rd-social-twitter',
          url: '#',
+         active: false,
       },
       {
          icon: 'rd-social-likedin',
          name: 'Linkedin',
-         url: '#',
+         url: 'https://www.linkedin.com/in/damian-rabiński-07b265113',
+         active: true,
       },
       {
          icon: 'rd-social-instagram',
          name: 'Instagram',
          url: '#',
+         active: false,
       },
    ];
+
+   language = 'pl';
+
+   changeLanguage() {
+      if (this.language === 'pl') {
+         this.language = 'en';
+      } else {
+         this.language = 'pl';
+      }
+   }
 }

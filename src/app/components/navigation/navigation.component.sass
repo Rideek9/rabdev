@@ -1,0 +1,47 @@
+@import "variables"
+
+.navigationContainer
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  list-style: none
+  gap: 1rem
+
+
+.navigationElement
+  width: 100%
+  padding: .8rem
+  display: flex
+  flex-direction: row
+  color: $mainColorText
+  justify-content: space-between
+  transition: all .4s
+  border-radius: 2rem
+
+  &:hover
+    border-radius: 2rem
+    background-color: $mainColorText
+    color: black
+
+  & > a
+    color: inherit
+
+
+.active-link
+  background-color: $mainColorText
+  border-radius: 2rem
+  color: black
+
+.active-link:after
+    content: '</>'
+    display: block
+    color: black
+    margin-right: 3rem
+
+
+
+
+
+

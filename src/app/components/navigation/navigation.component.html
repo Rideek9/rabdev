@@ -1,0 +1,14 @@
+<ul class="navigationContainer">
+   @for (element of navigationElement; track element.title) {
+      @if (element.active) {
+         <a
+            [routerLink]="element.url"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="navigationElement"
+         >
+            <li>{{ element.title }}</li>
+         </a>
+      }
+   }
+</ul>
