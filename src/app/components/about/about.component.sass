@@ -1,0 +1,84 @@
+@import "variables"
+
+.aboutWrapper
+  width: 100%
+  height: 100%
+  font-family: 'Oxanium', sans-serif
+  position: relative
+
+
+.photoMe
+  background-image: url('../../../../public/Img/MyPhoto.webp')
+  width: 35rem
+  height: 85%
+  background-size: contain
+  background-repeat: no-repeat
+  background-position:  70%
+  position: absolute
+  //border-radius: 0 0 50% 50%
+  right: 0
+  opacity: .45
+  transform: translateY(10%)
+  mask-image: url("../../../../public/Img/maskImageOne.svg")
+  mask-size: 120%
+  mask-repeat: no-repeat
+  mask-position: bottom
+
+.contentWrapper
+  width: 60%
+  min-height: 100%
+  position: relative
+  font-family: Oxygen, sans-serif
+
+
+.nameWrapper
+  padding: 50% 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  overflow: hidden
+
+  & > h1
+    font-size: 3rem
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 3px
+    //transform: translateX(-200%)
+    animation: show 0.6s backwards
+
+
+
+  & > p
+    font-size: 1.2rem
+    font-weight: 100
+    letter-spacing: 3px
+    animation: show  .6s  .4s backwards
+
+    & > span
+      color: $hoverColorFirst
+      font-weight: 600
+
+  & > .icon
+    font-size: 3rem
+    animation:  enlarge .6s .8s backwards
+
+
+
+
+@keyframes show
+  0%
+    transform: translateX(-200%)
+
+  100%
+    transform: translateX(0%)
+
+
+@keyframes enlarge
+  0%
+    transform: scale(0)
+
+  50%
+    transform: scale(1.3)
+
+  100%
+    transform: scale(1)

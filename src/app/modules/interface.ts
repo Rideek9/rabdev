@@ -10,3 +10,10 @@ export interface NavigationInterface {
    url: string;
    active: boolean;
 }
+
+export interface FooterInterface {
+   name: string;
+   iconName: string;
+   active: boolean;
+   size: string;
+}

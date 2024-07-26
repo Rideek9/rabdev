@@ -1,0 +1,9 @@
+<div class="footerContainer">
+   <i class="rd-icon-arrow-left iconFooter"></i>
+   <ul class="footerElement">
+      @for (element of footerElements; track element.name) {
+         <i class="{{ element.iconName }} " style=" font-size: {{ element.size }}rem "></i>
+      }
+   </ul>
+   <i class="rd-icon-arrow-right iconFooter"></i>
+</div>

@@ -10,7 +10,7 @@ export class NavigationComponent {
    navigationElement: NavigationInterface[] = [
       {
          title: 'o mnie',
-         url: '/',
+         url: '/about',
          active: true,
       },
       {
@@ -37,6 +37,11 @@ export class NavigationComponent {
          title: 'kontakt',
          active: true,
          url: '/contact',
+      },
+      {
+         title: 'git hub',
+         active: true,
+         url: '/github',
       },
    ];
 }
